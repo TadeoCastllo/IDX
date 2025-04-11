@@ -47,12 +47,12 @@ export const MenuLateral = () => {
                             alt="" />
                     </span>
                     <span className="text-sm md:text-base font-bold">
-                        Edward Tompson
+                        Mi tienda
                     </span>
                 </a>
             </div>
             <div id="nav" className="w-full px-6">
-                <a href="#" className="w-full px-2 inline-flex space-x-2 items-center border-b border-slate-700 py-3 bg-blue-800 hover:bg-white/5 transition ease-linear duration-150">
+            <a href="#" className="w-full px-2 inline-flex space-x-2 items-center border-b border-slate-700 py-3 bg-blue-800 hover:bg-white/5 transition ease-linear duration-150">
                     <div>
                     {
                         elementos[1].icono
