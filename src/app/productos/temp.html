@@ -1,105 +1,205 @@
-
-<div className="bg-slate-100 overflow-y-scroll w-screen h-screen antialiased text-slate-300 selection:bg-blue-600 selection:text-white">
-    <div className="flex flex-col relative w-screen">
-        <div id="menu" className="bg-gray-900 min-h-screen z-10 text-slate-300 w-64 fixed left-0 h-screen overflow-y-scroll">
-           <div id="logo" className="my-4 px-6">
-            <h1 className="text-lg md:text-2xl font-bold text-white">Dash<span className="text-blue-500">8</span>.</h1>
-            <p className="text-slate-500 text-sm">Manage your actions and activities</p>
-           </div>
-           <div id="profile" className="px-6 py-10">
-            <p className="text-slate-500">Welcome back,</p>
-            <a href="#" className="inline-flex space-x-2 items-center">
-                <span>
-                    <img className="rounded-full w-8 h-8" src="https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=128&q=80" alt=""></img>
-                </span>
-                <span className="text-sm md:text-base font-bold">
-                    Edward Tompson
-                </span>
-                </a>
-           </div>
-           <div id="nav" className="w-full px-6">
-            <a href="#" className="w-full px-2 inline-flex space-x-2 items-center border-b border-slate-700 py-3 bg-blue-800 hover:bg-white/5 transition ease-linear duration-150">
-                <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6 text-white">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
-                      </svg>
-                      
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div className="lg:container lg:mx-auto lg:py-16 md:py-12 md:px-6 py-12 px-4">
+        <h1 className="text-center dark:text-white lg:text-4xl text-3xl lg:leading-9 leading-7 text-gray-800 font-semibold">
+            FAQ's</h1>
+    
+        <div
+            className="lg:mt-12 bg-gray-100 dark:bg-gray-800 md:mt-10 mt-8 lg:py-7 lg:px-6 md:p-6 py-6 px-4 lg:w-8/12 w-full mx-auto">
+            <div className="flex justify-between md:flex-row flex-col">
+                <div className="md:mb-0 mb-8 md:text-left text-center">
+                    <h2 className="font-medium dark:text-white text-xl leading-5 text-gray-800 lg:mb-2 mb-4">Questions</h2>
+                    <p
+                        className="font-normal dark:text-gray-300 text-sm leading-5 text-gray-600 md:w-8/12 md:ml-0 w-11/12 mx-auto">
+                        If you don’t find your answer, Please contact us or Leave a Message, we’ll be more than happy to
+                        assist you.</p>
                 </div>
-                <div className="flex flex-col">
-                    <span className="text-lg font-bold leading-5 text-white">Dashboard</span>
-                    <span className="text-sm text-white/50 hidden md:block">Data Overview</span>
+    
+                <div className="flex justify-center items-center">
+                    <div
+                        className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 flex bg-white md:justify-center justify-between items-center px-4 py-3 w-full">
+                        <input className="focus:outline-none bg-white" type="text" placeholder="Search" />
+                        <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg1.svg" alt="search">
+                    </div>
                 </div>
-            </a>
-            <a href="#" className="w-full px-2 inline-flex space-x-2 items-center border-b border-slate-700 py-3 hover:bg-white/5 transition ease-linear duration-150">
-                <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125" />
-                      </svg>                      
-                </div>
-                <div className="flex flex-col">
-                    <span className="text-lg text-slate-300 font-bold leading-5">Database</span>
-                    <span className="text-sm text-slate-500 hidden md:block">Database Manager</span>
-                </div>
-            </a>
-            <a href="#" className="w-full px-2 inline-flex space-x-2 items-center border-b border-slate-700 py-3 hover:bg-white/5 transition ease-linear duration-150">
-                <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 004.5 4.5H18a3.75 3.75 0 001.332-7.257 3 3 0 00-3.758-3.848 5.25 5.25 0 00-10.233 2.33A4.502 4.502 0 002.25 15z" />
-                      </svg>                        
-                </div>
-                <div className="flex flex-col">
-                    <span className="text-lg text-slate-300 font-bold leading-5">Cloud Storage</span>
-                    <span className="text-sm text-slate-500 hidden md:block">Manage Cloud Storage</span>
-                </div>
-            </a>
-            <a href="#" className="w-full px-2 inline-flex space-x-2 items-center border-b border-slate-700 py-3 hover:bg-white/5 transition ease-linear duration-150">
-                <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 3v1.5M3 21v-6m0 0l2.77-.693a9 9 0 016.208.682l.108.054a9 9 0 006.086.71l3.114-.732a48.524 48.524 0 01-.005-10.499l-3.11.732a9 9 0 01-6.085-.711l-.108-.054a9 9 0 00-6.208-.682L3 4.5M3 15V4.5" />
-                      </svg>                      
-                </div>
-                <div className="flex flex-col">
-                    <span className="text-lg text-slate-300 font-bold leading-5">Reports</span>
-                    <span className="text-sm text-slate-500 hidden md:block">Manage Reports</span>
-                </div>
-            </a>
-            <a href="#" className="w-full px-2 inline-flex space-x-2 items-center border-b border-slate-700 py-3 hover:bg-white/5 transition ease-linear duration-150">
-                <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 5.25a3 3 0 013 3m3 0a6 6 0 01-7.029 5.912c-.563-.097-1.159.026-1.563.43L10.5 17.25H8.25v2.25H6v2.25H2.25v-2.818c0-.597.237-1.17.659-1.591l6.499-6.499c.404-.404.527-1 .43-1.563A6 6 0 1121.75 8.25z" />
-                      </svg>                      
-                </div>
-                <div className="flex flex-col">
-                    <span className="text-lg text-slate-300 font-bold leading-5">Security</span>
-                    <span className="text-sm text-slate-500 hidden md:block">Generate Security Keys</span>
-                </div>
-            </a>
-            <a href="#" className="w-full px-2 inline-flex space-x-2 items-center border-b border-slate-700 py-3 hover:bg-white/5 transition ease-linear duration-150">
-                <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 7.125C2.25 6.504 2.754 6 3.375 6h6c.621 0 1.125.504 1.125 1.125v3.75c0 .621-.504 1.125-1.125 1.125h-6a1.125 1.125 0 01-1.125-1.125v-3.75zM14.25 8.625c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v8.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 01-1.125-1.125v-8.25zM3.75 16.125c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v2.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 01-1.125-1.125v-2.25z" />
-                      </svg>                                          
-                </div>
-                <div className="flex flex-col">
-                    <span className="text-lg text-slate-300 font-bold leading-5">Extensions</span>
-                    <span className="text-sm text-slate-500 hidden md:block">Manage Extensions</span>
-                </div>
-            </a>
-            <a href="#" className="w-full px-2 inline-flex space-x-2 items-center py-3 hover:bg-white/5 transition ease-linear duration-150">
-                <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12a7.5 7.5 0 0015 0m-15 0a7.5 7.5 0 1115 0m-15 0H3m16.5 0H21m-1.5 0H12m-8.457 3.077l1.41-.513m14.095-5.13l1.41-.513M5.106 17.785l1.15-.964m11.49-9.642l1.149-.964M7.501 19.795l.75-1.3m7.5-12.99l.75-1.3m-6.063 16.658l.26-1.477m2.605-14.772l.26-1.477m0 17.726l-.26-1.477M10.698 4.614l-.26-1.477M16.5 19.794l-.75-1.299M7.5 4.205L12 12m6.894 5.785l-1.149-.964M6.256 7.178l-1.15-.964m15.352 8.864l-1.41-.513M4.954 9.435l-1.41-.514M12.002 12l-3.75 6.495" />
-                      </svg>                                        
-                </div>
-                <div className="flex flex-col">
-                    <span className="text-lg text-slate-300 font-bold leading-5">Settings</span>
-                    <span className="text-sm text-slate-500 hidden md:block">Edit App Settings</span>
-                </div>
-            </a>
-            
-           </div>
+            </div>
         </div>
-        
-      
+        <div className="lg:w-8/12 w-full mx-auto">
+            <!-- Question 1 -->
+            <hr className="w-full lg:mt-10 md:mt-12 md:mb-8 my-8" />
+    
+            <div className="w-full md:px-6">
+                <div id="mainHeading" className="flex justify-between items-center w-full">
+                    <div className="">
+                        <p
+                            className="flex justify-center items-center dark:text-white font-medium text-base leading-6 md:leading-4 text-gray-800">
+                            <span
+                                className="lg:mr-6 mr-4 dark:text-white lg:text-2xl md:text-xl text-lg leading-6 md:leading-5 lg:leading-4 font-semibold text-gray-800">Q1.</span>
+                            How do i know if a product is available in boutiques?</p>
+                    </div>
+                    <button aria-label="toggler"
+                        className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800" data-menu>
+                        <img className="transform dark:hidden "
+                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2.svg" alt="toggler">
+                        <img className="transform dark:block hidden "
+                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2dark.svg" alt="toggler">
+                    </button>
+                </div>
+                <div id="menu" className="hidden mt-6 w-full">
+                    <p className="text-base leading-6 text-gray-600 dark:text-gray-300 font-normal">Remember you can query
+                        the status of your orders any time in My orders in the My account section. if you are not resigered
+                        at Mango.com, you can access dierectly in the Orders section. In this cause, you will have enter
+                        your e-mail address and order number.</p>
+                </div>
+            </div>
+    
+            <!-- Question 2 -->
+    
+            <hr className="w-full lg:mt-10 my-8" />
+    
+            <div className="w-full md:px-6">
+                <div id="mainHeading" className="flex justify-between items-center w-full">
+                    <div className="">
+                        <p
+                            className="flex justify-center items-center dark:text-white font-medium text-base leading-6 lg:leading-4 text-gray-800">
+                            <span
+                                className="lg:mr-6 dark:text-white mr-4 lg:text-2xl md:text-xl text-lg leading-6 md:leading-5 lg:leading-4 font-semibold text-gray-800">Q2.</span>
+                            How can i find the prices or get other information about chanel products?</p>
+                    </div>
+                    <button aria-label="toggler"
+                        className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800" data-menu>
+                        <img className="transform dark:hidden "
+                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2.svg" alt="toggler">
+                        <img className="transform dark:block hidden "
+                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2dark.svg" alt="toggler">
+                    </button>
+                </div>
+                <div id="menu" className="hidden mt-6 w-full">
+                    <p className="text-base leading-6 text-gray-600 dark:text-gray-300 font-normal">Remember you can query
+                        the status of your orders any time in My orders in the My account section. if you are not resigered
+                        at Mango.com, you can access dierectly in the Orders section. In this cause, you will have enter
+                        your e-mail address and order number.</p>
+                </div>
+            </div>
+    
+            <!-- Question 3 -->
+    
+            <hr className="w-full lg:mt-10 my-8" />
+    
+            <div className="w-full md:px-6">
+                <div id="mainHeading" className="flex justify-between items-center w-full">
+                    <div className="">
+                        <p
+                            className="flex justify-center items-center dark:text-white font-medium text-base leading-6 lg:leading-4 text-gray-800">
+                            <span
+                                className="lg:mr-6 dark:text-white mr-4 lg:text-2xl md:text-xl text-lg leading-6 md:leading-5 lg:leading-4 font-semibold text-gray-800">Q3.</span>How
+                            many collections come out every year?</p>
+                    </div>
+                    <button aria-label="toggler"
+                        className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800" data-menu>
+                        <img className="transform dark:hidden "
+                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2.svg" alt="toggler">
+                        <img className="transform dark:block hidden "
+                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2dark.svg" alt="toggler">
+                    </button>
+                </div>
+                <div id="menu" className="hidden mt-6 w-full">
+                    <p className="text-base leading-6 text-gray-600 dark:text-gray-300 font-normal">Remember you can query
+                        the status of your orders any time in My orders in the My account section. if you are not resigered
+                        at Mango.com, you can access dierectly in the Orders section. In this cause, you will have enter
+                        your e-mail address and order number.</p>
+                </div>
+            </div>
+    
+            <!-- Question 4 -->
+    
+            <hr className="w-full lg:mt-10 my-8" />
+    
+            <div className="w-full md:px-6">
+                <div id="mainHeading" className="flex justify-between items-center w-full">
+                    <div className="">
+                        <p
+                            className="flex justify-center items-center dark:text-white font-medium text-base leading-6 lg:leading-4 text-gray-800">
+                            <span
+                                className="lg:mr-6 dark:text-white mr-4 lg:text-2xl md:text-xl text-lg leading-6 md:leading-5 lg:leading-4 font-semibold text-gray-800">Q4.</span>Are
+                            all of the fashion collections features on the website?</p>
+                    </div>
+                    <button aria-label="toggler"
+                        className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800" data-menu>
+                        <img className="transform dark:hidden "
+                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2.svg" alt="toggler">
+                        <img className="transform dark:block hidden "
+                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2dark.svg" alt="toggler">
+                    </button>
+                </div>
+                <div id="menu" className="hidden mt-6 w-full">
+                    <p className="text-base leading-6 text-gray-600 dark:text-gray-300 font-normal">Remember you can query
+                        the status of your orders any time in My orders in the My account section. if you are not resigered
+                        at Mango.com, you can access dierectly in the Orders section. In this cause, you will have enter
+                        your e-mail address and order number.</p>
+                </div>
+            </div>
+    
+            <!-- Question 5 -->
+    
+            <hr className="w-full lg:mt-10 my-8" />
+    
+            <div className="w-full md:px-6">
+                <div id="mainHeading" className="flex justify-between items-center w-full">
+                    <div className="">
+                        <p
+                            className="flex justify-center items-center dark:text-white font-medium text-base leading-6 lg:leading-4 text-gray-800">
+                            <span
+                                className="lg:mr-6 dark:text-white mr-4 lg:text-2xl md:text-xl text-lg leading-6 md:leading-5 lg:leading-4 font-semibold text-gray-800">Q5.</span>Where
+                            do i find products that i have seen in magazines or Social Media?</p>
+                    </div>
+                    <button aria-label="toggler"
+                        className="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800" data-menu>
+                        <img className="transform dark:hidden "
+                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2.svg" alt="toggler">
+                        <img className="transform dark:block hidden "
+                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/faq-8-svg2dark.svg" alt="toggler">
+                    </button>
+                </div>
+                <div id="menu" className="hidden mt-6 w-full">
+                    <p className="text-base leading-6 text-gray-600 dark:text-gray-300 font-normal">Remember you can query
+                        the status of your orders any time in My orders in the My account section. if you are not resigered
+                        at Mango.com, you can access dierectly in the Orders section. In this cause, you will have enter
+                        your e-mail address and order number.</p>
+                </div>
+            </div>
+    
+            <hr className="w-full lg:mt-10 my-8" />
+        </div>
     </div>
-</div>
+    
+    
+    
+    
+    
+    <script>
+        let elements = document.querySelectorAll("[data-menu]");
+        for (let i = 0; i < elements.length; i++) {
+            let main = elements[i];
+    
+            main.addEventListener("click", function () {
+                let element = main.parentElement.parentElement;
+                let indicators = main.querySelectorAll("img");
+                let child = element.querySelector("#menu");
+                let h = element.querySelector("#mainHeading>div>p");
+    
+                h.classNameList.toggle("font-semibold");
+                child.classNameList.toggle("hidden");
+                // console.log(indicators[0]);
+                indicators[0].classNameList.toggle("rotate-180");
+            });
+        }
+    </script> 
+</body>
+</html>
