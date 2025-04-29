@@ -27,8 +27,13 @@ const elementos =[
         titulo: "Pokimons",
         subtitulo: "Del diablo",
         icono: <GiSoccerBall />
+    },
+    {
+        path: "/pokemonlista",
+        titulo: "PokimonesCards",
+        subtitulo: "De Diosito",
+        icono: <GiSoccerBall />
     }
-
 ];
 
 export const MenuLateral = () => {

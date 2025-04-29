@@ -7,6 +7,10 @@ const nextConfig: NextConfig = {
       {
         protocol:"https",
         hostname: "i.abcnewsfe.com"
+      },
+      {
+        protocol:"https",
+        hostname: "raw.githubusercontent.com"
       }
     ]
   }
